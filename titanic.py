@@ -6,20 +6,20 @@ import pandas as pd
 def load_df():
     df = pd.read_csv("data/csv-20231212T044804Z-001/titanic.csv")
 
-    # »ıÁ¸ ¿©ºÎ
+    # ìƒì¡´ ì—¬ë¶€
     survival_options = df.Survived.unique()
-    # °´½Ç
+    # ê°ì‹¤
     p_class_options = df.Pclass.unique()
-    # ¼ºº°
+    # ì„±ë³„
     sex_options = df.Sex.unique()
-    # Ãâ¹ß
+    # ì¶œë°œ
     embark_options = df.Embarked.unique()
 
-    # ¿ä±İ
+    # ìš”ê¸ˆ
     min_fare = df.Fare.min()
     max_fare = df.Fare.max()
 
-    # ³ªÀÌ
+    # ë‚˜ì´
     min_age = df.Age.min()
     max_age = df.Age.max()
 
