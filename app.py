@@ -4,7 +4,7 @@ import pandas as pd
 # Cache our data
 @st.cache_data()
 def load_df():
-    df = pd.read_csv("data/csv-20231212T044804Z-001/titanic.csv")
+    df = pd.read_csv("data/titanic.csv")
 
     # 생존 여부
     survival_options = df.Survived.unique()
